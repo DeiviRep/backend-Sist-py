@@ -6,10 +6,10 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 #connectamos
-app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASSWORD']=''
-app.config['MYSQL_DB']='PWEB_PYTHON'
+app.config['MYSQL_HOST']='bvcpgguw0kpl5h91bxdy-mysql.services.clever-cloud.com'
+app.config['MYSQL_USER']='u4plexpe8n2igv8k'
+app.config['MYSQL_PASSWORD']='cgDOAUgJfonIDHUeJeqF'
+app.config['MYSQL_DB']='bvcpgguw0kpl5h91bxdy'
 mysql = MySQL(app)
 
 app.secret_key= 'mysecretkey'
