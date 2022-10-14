@@ -32,6 +32,6 @@ def holamundo():
 @app.route("/add_user", methods=['POST'])
 def add_user():
     if request.method == 'POST':
-        print(request.form('ci'))
-        return {"carnet":request.form('ci')}
+        print(request.form.get('ci'))
+        return {"carnet":request.form.get('ci')}
         
