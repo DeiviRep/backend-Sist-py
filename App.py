@@ -1,5 +1,7 @@
 from array import array
+from crypt import methods
 import json
+from urllib import request
 from flask import Flask,jsonify
 from flask_cors import CORS
 from flask_mysqldb import MySQL
@@ -27,5 +29,10 @@ def holamundo():
     for n in row:
         usuarios.append({"nombre":row[i][1],"email":row[i][2],"pasword":row[i][3]})
         i=i+1
-        
     return jsonify(usuarios)
+
+@app.route("/add_user", methods=['POST'])
+def add_user():
+    if request.method == 'POST':
+        print(request.form('ci'))
+        
