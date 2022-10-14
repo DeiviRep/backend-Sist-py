@@ -1,6 +1,6 @@
 
 from crypt import methods
-from flask import Flask,jsonify,request
+from flask import Flask, jsonify, request
 
 from flask_cors import CORS
 from flask_mysqldb import MySQL
@@ -34,5 +34,5 @@ def holamundo():
 def add_user():
     if request.method == 'POST':
         print(request.form('ci'))
-        return jsonify({"carnet":request.form('ci')})
+        return {"carnet":request.form('ci')}
         
