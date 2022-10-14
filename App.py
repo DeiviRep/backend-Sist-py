@@ -35,4 +35,5 @@ def holamundo():
 def add_user():
     if request.method == 'POST':
         print(request.form('ci'))
+        return jsonify({"carnet":request.form('ci')})
         
