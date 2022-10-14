@@ -1,8 +1,7 @@
-from array import array
+
 from crypt import methods
-import json
-from urllib import request
-from flask import Flask,jsonify
+from flask import Flask,jsonify,request
+
 from flask_cors import CORS
 from flask_mysqldb import MySQL
 
