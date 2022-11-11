@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask import request
 from flask_cors import cross_origin
+from rutas.coneccion import con
 
 con()
 login = Blueprint('login',__name__)
