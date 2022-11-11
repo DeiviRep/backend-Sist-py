@@ -1,9 +1,11 @@
 from flask import Blueprint
 from flask import request
+import flask_cors
 
 # con()
 login = Blueprint('login',__name__)
-@login.route('/login',methods=['POST'])
+@login.route('/',methods=['POST'])
+@cross_origin()
 def ingreso_login():
     if request.method == 'POST':
         usuario = request.form['usuario']
