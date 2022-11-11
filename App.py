@@ -3,5 +3,5 @@ from rutas.login import login
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
 app.register_blueprint(login)
+CORS(app)
