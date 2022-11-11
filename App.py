@@ -41,4 +41,5 @@ CORS(app)
 @app.route("/", methods=['POST'])
 def add_user():
     if request.method == 'POST':
-        print(request.form('ci'))
+        print(request.form('usuario'))
+        return jsonify({"carnet":request.form('usuario')})
