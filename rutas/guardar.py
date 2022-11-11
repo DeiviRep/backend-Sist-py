@@ -1,8 +1,8 @@
 from flask import Blueprint
 from flask import request
 from flask_cors import cross_origin
-from rutas.coneccion import con
-# con()
+
+con()
 login = Blueprint('login',__name__)
 @login.route('/',methods=['POST'])
 @cross_origin(supports_credentials=True)
